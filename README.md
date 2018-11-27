@@ -4,8 +4,9 @@ Monitor your Docker containers using prometheus, cAdvisor , node-exported and gr
 Refer to this medium article for more details
 
 ## Pre-requisites
-docker on windows
-docker-compose
+
+* docker on windows
+* docker-compose
 
 ## Setup and Install
 
