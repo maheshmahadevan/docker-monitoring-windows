@@ -1,5 +1,5 @@
 # Docker Monitoring on Windows
-Monitor your Docker containers using prometheus, cAdvisor , node-exported and grafana on Windows
+Monitor your Docker containers using prometheus, cAdvisor , node-exporter and grafana on Windows
 
 Refer to this medium article for more details
 
@@ -10,9 +10,13 @@ Refer to this medium article for more details
 
 ## Setup and Install
 
-Clone this repo on your Windows OS where Docker is up and running.
+Clone this repo on your Windows OS machine where Docker is up and running.
 
-On Power shell run this command from current directory of the repo.
+Open Power shell window and run this command from current directory of this repository.
 
 ```docker-compose up```
+
+Goto http://localhost:3000 for grafana dashboard (default user/pass : admin/admin )
+
+
 
