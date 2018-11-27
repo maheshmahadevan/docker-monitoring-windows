@@ -2,6 +2,7 @@
 Monitor your Docker containers using prometheus, cAdvisor , node-exporter and grafana on Windows
 
 Refer to this medium article for more details
+https://medium.com/@mahesh.mahadevan/monitoring-docker-containers-on-windows-using-prometheus-grafana-c32bbb7ed04
 
 ## Pre-requisites
 
