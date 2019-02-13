@@ -26,7 +26,7 @@ scrape_configs:
     # scheme defaults to 'http'.
 
     static_configs:
-    - targets: ['localhost:9090']
+    - targets: ['prometheus:9090']
     
   #- job_name: 'docker'
 
@@ -42,7 +42,7 @@ scrape_configs:
     scrape_interval: 5s
 
     static_configs:
-    - targets: ['10.0.75.1:8080']
+    - targets: ['cadvisor:8080']
 
   - job_name: 'node-exporter'
 
@@ -50,7 +50,7 @@ scrape_configs:
     scrape_interval: 5s
 
     static_configs:
-    - targets: ['10.0.75.1:9100']    
+    - targets: ['node-exporter:9100']    
 
   - job_name: 'kafka'
 
