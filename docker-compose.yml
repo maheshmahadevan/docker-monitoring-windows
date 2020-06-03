@@ -17,7 +17,7 @@ services:
       - '--web.console.libraries=/usr/share/prometheus/console_libraries'
       - '--web.console.templates=/usr/share/prometheus/consoles'
     ports:
-      - "9090:9090"
+      - "${PROMETHEUS_PORT:-9090}:9090"
 
   grafana:
     image: grafana/grafana
@@ -26,7 +26,7 @@ services:
     depends_on:
       - prometheus
     ports:
-      - 3000:3000
+      - "${GRAFANA_PORT:-3000}:3000"
     volumes:
       - grafana_storage:/var/lib/grafana
       - ./grafana/provisioning/:/etc/grafana/provisioning/
@@ -58,6 +58,6 @@ services:
       - /sys:/sys:ro
       - /var/lib/docker/:/var/lib/docker:ro
     ports:
-      - 8080:8080
+      - "${CADVISOR_PORT:-8080}:8080"
     restart: always
          
